@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
   titleStyle: {
     flex: 1,
     marginLeft: 10,
-  }
- 
+  },
 });
 export default RouteCard;

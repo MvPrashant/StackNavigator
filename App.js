@@ -5,7 +5,7 @@ import Profile from "./Screens/Profile";
 import DocumentScreen from "./Screens/DocumentScreen";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { StyleSheet } from "react-native";
-import  DashboardScreen  from "./Screens/DashboardScreen";
+import { DashboardScreen } from "./Screens/DashboardScreen";
 
 const Stack = createNativeStackNavigator();
 export default function App() {
@@ -15,10 +15,10 @@ export default function App() {
         screenOptions={{ headerShown: false }}
         initialRouteName="DashboardScreen"
       >
-        <Stack.Screen name="DashboardScreen" components={DashboardScreen} />
-        <Stack.Screen name="DocumentScreen" components={DocumentScreen} />
-        <Stack.Screen name="HistoryScreen" components={HistoryScreen} />
-        <Stack.Screen name="Profile" components={Profile} />
+        <Stack.Screen name="DashboardScreen" component={DashboardScreen} />
+        <Stack.Screen name="DocumentScreen" component={DocumentScreen} />
+        <Stack.Screen name="HistoryScreen" component={HistoryScreen} />
+        <Stack.Screen name="Profile" component={Profile} />
       </Stack.Navigator>
     </NavigationContainer>
   );

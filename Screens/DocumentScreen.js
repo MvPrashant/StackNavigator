@@ -1,14 +1,18 @@
-import { Pressable, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import React from "react";
+import RouteCard from "../components/RouteCard";
 
 const DocumentScreen = ({ navigation }) => {
   console.log("Document Screen");
   return (
-    <View>
-      <Text>Document Screen</Text>
-      {/* <Pressable title onPress={navigation.goBack()}>
-        <Text> Go Back</Text>
-      </Pressable> */}
+    <View style={{ marginVertical: 100, padding: 30 }}>
+      <Text style={{ color: "red" }}>Document Screen</Text>
+      <RouteCard
+        title="Go Back"
+        onPressHandler={() => {
+          navigation.goBack();
+        }}
+      />
     </View>
   );
 };
